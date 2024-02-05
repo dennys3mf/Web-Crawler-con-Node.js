@@ -1,0 +1,125 @@
+body {
+    background-image: url(/src/img/Scratch_texture.png), linear-gradient(#59726a, #b2c4be);
+    background-repeat: repeat, no-repeat;
+    background-size: 300px 200px, 100% 100%;
+    background-color: #b2c4be;
+    position: relative;
+    min-height: 100%;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    margin: 0; /* Añadir esta línea para eliminar el margen predeterminado del cuerpo */
+}
+.cargador {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px; /* La mitad de la altura del cargador */
+    margin-left: -20px; /* La mitad del ancho del cargador */
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.input{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+}
+.dataContainer {
+    width: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #fff;
+    background-image: url(/src/img/postIT_bg.png);
+    background-size: 60px;
+    box-shadow: 0 10px rgba(36,40,39,.5);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+.url-list {
+    list-style-type: none;
+    padding: 4;
+  }
+  
+  .url-list li {
+    background-color: #a9ffa9;
+    width: 40%;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+
+  .url-list li:hover {
+    background-color: #e0e0e0;
+  }
+.titulo{
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+    margin: 1 0 0 0;
+
+    padding: 0
+}
+.descripcion{
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    margin: 1 0 0 0;
+    padding: 0;
+}
+
+#piePagina{
+    background-image: url(/src/img/TreeBG.png);
+    background-position: top;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 40%;
+    z-index: -1
+}
+.fondo{
+    background-color: #f2f2f2;
+    padding: 90px;
+    margin: 100px;
+    border-color: black;
+    border: #1f157c;
+
+}
+  
+.boton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 24px;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    display: block;
+    opacity: 0.9;
+    margin-top: 2rem;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.boton:hover {
+    opacity: 1;
+}
+
